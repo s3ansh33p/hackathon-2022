@@ -10,8 +10,8 @@ let speed = 1.5;
 let percent = 1;
 let intervalAnim, intervalTimer;
 // const startTime = new Date("2022 Nov 18 08:00:00").getTime();
-const startTime = new Date("2022 Oct 16 08:00:00").getTime();
-const startWeb = new Date("2022 Oct 16 00:00:00").getTime();
+const startTime = 1665878400000 // new Date("2022 Oct 16 08:00:00").getTime(); precomputed
+const startWeb = 1665849600000 // new Date("2022 Oct 16 00:00:00").getTime(); precomputed
 
 document.addEventListener("DOMContentLoaded", function() {
     initProgress();
