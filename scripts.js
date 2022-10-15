@@ -40,7 +40,9 @@ function initProgress() {
     });
 }
 
-function updateTimer() {
+async function updateTimer() {
+    $("#debug-t").text(`Debug: UpdateTimer()`);
+    await new Promise(r => setTimeout(r, 200));
     let diff = Date.now() - startTime;
     if (diff > 0) {
         $("#days").text(0);
@@ -58,7 +60,9 @@ function updateTimer() {
     $("#debug-t").text(`Debug: ${Date.now()} | ${startTime} | ${diff} | ${startWeb} | ${percent} | ${Math.floor(diff / 1000 % 60)} | ${diff / 1000 % 60} | ${diff / 1000}`);
 }
 
-function animateProgress() {
+async function animateProgress() {
+    $("#debug-t").text(`Debug: AnimateProgress()`);
+    await new Promise(r => setTimeout(r, 200));
     percent = calculatePercent();
     let path = $('svg').find('path');
     let pathLength = path[0].getTotalLength();
