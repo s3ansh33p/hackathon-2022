@@ -9,8 +9,8 @@
 let speed = 1.5;
 let percent = 1;
 let intervalAnim, intervalTimer;
-// const startTime = new Date("2022 Nov 18 08:00:00").getTime();
-const startTime = 1665878400000 // new Date("2022 Oct 16 08:00:00").getTime(); precomputed
+const startTime = 1668729600000 // new Date("2022 Nov 18 08:00:00").getTime(); precomputed
+// const startTime = 1665878400000 // new Date("2022 Oct 16 08:00:00").getTime(); precomputed
 const startWeb = 1665849600000 // new Date("2022 Oct 16 00:00:00").getTime(); precomputed
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -57,11 +57,9 @@ async function updateTimer() {
         $("#minutes").text( Math.floor(diff / (60000) % 60));
         $("#seconds").text(Math.floor(diff / 1000 % 60));
     }
-    $("#debug-t").text(`Debug: ${Date.now()} | ${startTime} | ${diff} | ${startWeb} | ${percent} | ${Math.floor(diff / 1000 % 60)} | ${diff / 1000 % 60} | ${diff / 1000}`);
 }
 
 async function animateProgress() {
-    $("#debug-t").text(`Debug: AnimateProgress()`);
     await new Promise(r => setTimeout(r, 200));
     percent = calculatePercent();
     let path = $('svg').find('path');
