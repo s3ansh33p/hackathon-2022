@@ -4,89 +4,273 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Sean M, ComSSA and CASSA">
+    <meta name="author" content="Made with ❤ by Sean M, ComSSA and CASSA">
+    <meta name="description" content="ComSSA X CASSA Hackathon 2022">
     <title>ComSSA X CASSA Hackathon 2022</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
-
-    <!-- Will ultimately rely on only styles.css to make the page super fast -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" href="./styles.css">
     
+    <!-- jQuery 2.1.3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Velocity.JS 1.1.0 -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js" integrity="sha512-GvV09O/SNrtq1Au2eFYt+Yk3czV9lO/XGr272nKGvVq9cd3jrDdAwM+Z8ETKS/NkaAKug4HVIftP08M6EfMNYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap 5.2.2 -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+
   </head>
-  <body class="d-flex flex-column h-100">
+
+<body class="d-flex flex-column h-100">
     <div class="bg-image"></div>
     
-<!-- Begin page content -->
-<main class="flex-shrink-0">
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
 
-    <div class="container">
-        <!-- Header -->
-        <div class="d-flex align-items-center mt-5 main-title">
-            <h1 class="me-2">ComSSA X CASSA</h1>
-            <div class="d-flex flex-column">
-                <h6>HACKATHON 2022</h6>
-                <h6>START - END</h6>
+        <div class="container mb-5">
+            <!-- Header -->
+            <div class="d-flex align-items-center justify-content-md-start justify-content-center mt-5 main-title">
+                <h1 class="me-1 mb-0">ComSSA X CASSA</h1>
+                <div class="d-flex flex-column">
+                    <h6>2</h6>
+                    <h6>0</h6>
+                    <h6>2</h6>
+                    <h6>2</h6>
+                </div>
             </div>
+
+            <div class="row mt-5 flex-column-reverse flex-md-row">
+
+                <div class="col-12 col-md-6 my-5">
+                    <!-- Description -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro numquam atque recusandae consectetur a, cum iste, facilis nihil, labore vero nesciunt. Nesciunt et est excepturi, amet deserunt quas pariatur atque!</p>
+
+                    <!-- Registration -->
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-2">
+                            <button class="btn btn-primary h-100 w-100">Group Registration</button>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2">
+                            <button class="btn btn-primary h-100 w-100">Individual Registration</button>
+                        </div>
+                    </div>
+
+                    <!-- Get Involved! -->
+                    <div class="d-flex flex-md-row flex-column align-items-center mt-5 social-icons">
+                        <p class="me-2 mb-2">Get involved with ComSSA!</p>
+                        <div class="d-flex align-items-center justify-content-center mb-2">
+                            <a href="https://www.linkedin.com/company/computer-science-students-association" target="_blank" rel="noopener noreferrer">
+                                <div class="social-linkedin"></div>
+                            </a>
+                            <a href="https://www.facebook.com/ComSSACurtin" target="_blank" rel="noopener noreferrer">
+                                <div class="social-facebook"></div>
+                            </a>
+                            <a href="https://discord.gg/SuwfFfjYJB" target="_blank" rel="noopener noreferrer">
+                                <div class="social-discord"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Countdown -->
+                <div class="col-12 col-md-6 my-5" style="min-height: 250px;">
+                    <div class="d-flex align-items-center justify-content-center position-relative h-100 w-100">
+                        <div class="countdown-dots position-absolute"></div>
+                        <div class="figure position-absolute">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="250px" height="250px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                <path class="path" fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" d="M100.416,2.001C154.35,2.225,198,46.015,198,100
+                                    c0,54.124-43.876,98-98,98S2,154.124,2,100S45.876,2,100,2"/>
+                            </svg>
+                        </div>
+                        <!-- Timers -->
+                        <div class="position-absolute row w-100 h-100">
+                            <div class="col-6 p-0">
+                                <div class="d-flex align-items-end justify-content-end h-100 w-100">
+                                    <div class="timer">
+                                        <div class="timer-value" id="days">0</div>
+                                        <div class="timer-label">Days</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-0">
+                                <div class="d-flex align-items-end justify-content-start h-100 w-100">
+                                    <div class="timer">
+                                        <div class="timer-value" id="hours">0</div>
+                                        <div class="timer-label">Hours</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-0">
+                                <div class="d-flex align-items-start justify-content-end h-100 w-100">
+                                    <div class="timer">
+                                        <div class="timer-value" id="minutes">0</div>
+                                        <div class="timer-label">Minutes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-0">
+                                <div class="d-flex align-items-start justify-content-start h-100 w-100">
+                                    <div class="timer">
+                                        <div class="timer-value" id="seconds">0</div>
+                                        <div class="timer-label">Seconds</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Carousel -->
+            <div class="mt-5">
+                <h2 class="section-title">Photos from ComSSA x IET Hackathon - 2021</h2>
+                <div id="car-main" class="carousel slide carousel-fade" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#car-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#car-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#car-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#car-main" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="./assets/prev1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/prev2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/prev3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/prev4.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Fourth slide label</h5>
+                                <p>Some representative placeholder content for the fourth slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#car-main" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#car-main" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- General Agenda -->
+            <div class="mt-5">
+                <h2 class="section-title">General Agenda</h2>
+                <span>The general agenda for the hackathon Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id qui, voluptatem nihil repudiandae distinctio nulla dolor quia sapiente iure, voluptates, minima ratione maiores numquam molestias accusantium beatae illo quaerat.</span>
+            </div>
+
+            <!-- Frequently Asked Questions -->
+            <div class="mt-5">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="acc-main">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Question 1 will go here
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#acc-main">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur nesciunt similique possimus ducimus sapiente omnis laborum quaerat quidem. Aut, quibusdam voluptatum velit voluptates assumenda illo blanditiis vero! Doloremque, aliquam.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Question 2 will go here
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#acc-main">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur nesciunt similique possimus ducimus sapiente omnis laborum quaerat quidem. Aut, quibusdam voluptatum velit voluptates assumenda illo blanditiis vero! Doloremque, aliquam.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Question 3 will go here
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#acc-main">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur nesciunt similique possimus ducimus sapiente omnis laborum quaerat quidem. Aut, quibusdam voluptatum velit voluptates assumenda illo blanditiis vero! Doloremque, aliquam.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sponsors -->
+            <div class="mt-5 section-title">
+                <h2>Sponsors</h2>
+                <!-- Collection of images -->
+                <div class="row mt-5">
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/atlassian.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/bankwest.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/eecms.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/imc.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/powerledger.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/vgw.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/cassa.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/comssa.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="row mt-5">
+    </main>
 
-            <div class="col-12 col-md-6">
-                <!-- Description -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro numquam atque recusandae consectetur a, cum iste, facilis nihil, labore vero nesciunt. Nesciunt et est excepturi, amet deserunt quas pariatur atque!</p>
-
-                <!-- Registration -->
-                <div class="row">
-                    <div class="col-12 col-md-6 mb-2">
-                        <button class="btn btn-primary h-100 w-100">Group Registration</button>
-                    </div>
-                    <div class="col-12 col-md-6 mb-2">
-                        <button class="btn btn-primary h-100 w-100">Individual Registration</button>
-                    </div>
-                </div>
-
-                <!-- Get Involved! -->
-                <div class="d-flex align-items-center mt-5 social-icons">
-                    <p class="me-2 mb-0">Get involved with ComSSA!</p>
-                    <a href="https://www.linkedin.com/company/computer-science-students-association" target="_blank" rel="noopener noreferrer">
-                        <div class="social-linkedin"></div>
-                    </a>
-                    <a href="https://www.facebook.com/ComSSACurtin" target="_blank" rel="noopener noreferrer">
-                        <div class="social-facebook"></div>
-                    </a>
-                    <a href="https://discord.gg/SuwfFfjYJB" target="_blank" rel="noopener noreferrer">
-                        <div class="social-discord"></div>
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- Countdown -->
-            <div class="col-12 col-md-6">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="countdown-dots"></div>
-                </div>
-
-            </div>
-
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span>Footer if needed</span>
         </div>
+    </footer>
 
-
-    </div>
-
-</main>
-
-<footer class="footer mt-auto py-3 bg-dark">
-  <div class="container">
-    <span>Footer if needed</span>
-  </div>
-</footer>
-
-
-    
-  </body>
+</body>
 </html>
