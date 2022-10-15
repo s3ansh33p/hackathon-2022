@@ -8,13 +8,14 @@
 
 let speed = 1.5;
 let percent = 1;
-let interval;
-const startTime = new Date("2022 Nov 18 08:00:00").getTime();
-// const startWeb = new Date("2022 Oct 18 08:00:00").getTime();
+let intervalAnim, intervalTimer;
+// const startTime = new Date("2022 Nov 18 08:00:00").getTime();
+const startTime = new Date("2022 Oct 16 08:00:00").getTime();
 const startWeb = new Date("2022 Oct 16 00:00:00").getTime();
 
 document.addEventListener("DOMContentLoaded", function() {
     initProgress();
+    updateTimer();
     animateProgress();
 });
 
@@ -54,6 +55,7 @@ function updateTimer() {
         $("#minutes").text( Math.floor(diff / (60000) % 60));
         $("#seconds").text(Math.floor(diff / 1000 % 60));
     }
+    $("#debug-t").text(`Debug: ${Date.now()} | ${startTime} | ${diff} | ${startWeb} | ${percent} | ${Math.floor(diff / 1000 % 60)} | ${diff / 1000 % 60} | ${diff / 1000}`);
 }
 
 function animateProgress() {
