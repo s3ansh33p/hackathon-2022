@@ -40,9 +40,7 @@ function initProgress() {
     });
 }
 
-async function updateTimer() {
-    $("#debug-t").text(`Debug: UpdateTimer()`);
-    await new Promise(r => setTimeout(r, 200));
+function updateTimer() {
     let diff = Date.now() - startTime;
     if (diff > 0) {
         $("#days").text(0);
@@ -59,8 +57,7 @@ async function updateTimer() {
     }
 }
 
-async function animateProgress() {
-    await new Promise(r => setTimeout(r, 200));
+function animateProgress() {
     percent = calculatePercent();
     let path = $('svg').find('path');
     let pathLength = path[0].getTotalLength();
