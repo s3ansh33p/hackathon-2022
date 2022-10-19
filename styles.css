@@ -9,8 +9,13 @@
 /* =================== Variables =================== */
 
 @font-face {
-    font-family: 'Pattanakarn SemiExpanded';
+    font-family: 'Pattanakarn';
     src: url(./assets/Pattanakarn-Regular-SemiExpanded.woff2);
+}
+
+@font-face {
+    font-family: 'Pattanakarn Bold';
+    src: url(./assets/Pattanakarn-Bold-SemiExpanded.woff2);
 }
 
 :root {
@@ -29,7 +34,7 @@
     --primary: #22c0ef;
     --primary-h: #86def9;
     --primary-c: #000; 
-    --bs-font-sans-serif: 'Pattanakarn SemiExpanded', sans-serif;
+    --bs-font-sans-serif: 'Pattanakarn', sans-serif;
 
 }
 
@@ -56,11 +61,12 @@ body {
     font-size: 1.3rem;
     text-shadow: rgb(240 78 35 / 50%) 3px 3px 0px, rgb(240 78 35 / 30%) 6px 6px 0px;
     text-transform: uppercase;
-    font-weight: bold
+    font-family: 'Pattanakarn Bold', sans-serif;
 }
 
 .main-title img {
-    width: clamp(100px, calc(100px + 2vw), 200px);
+    /* width: clamp(100px, calc(100px + 2vw), 200px); */
+    width: clamp(125px, calc(100px + 5vw), 225px);
 }
 
 .main-title img:last-child {
@@ -77,7 +83,7 @@ body {
 /* sm media query */
 @media (min-width: 576px) {
     .main-title h1 {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 }
 
@@ -246,8 +252,58 @@ body {
     opacity: 0.5;
 }
 
+/* positioned at a specific place in background image */
+.comssa-image {
+    background: url(./assets/bg-comssa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+}
+
+/* md media query */
+@media (min-width: 768px) {
+    .comssa-image {
+        display: block;
+    }
+}
+
 .mt-top {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* sm media query */
+@media (min-width: 576px) {
+    .mt-top {
+        margin-top: 5rem;
+        margin-bottom: 9rem;
+    }
+}
+
+/* md media query */
+@media (min-width: 768px) {
+    .mt-top {
+        margin-bottom: 7rem;
+    }
+}
+
+/* lg media query */
+@media (min-width: 992px) {
+    .mt-top {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.mt-6 {
+    margin-top: 4rem;
 }
 
 .top-img img {
