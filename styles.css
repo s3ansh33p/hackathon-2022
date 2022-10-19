@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Pattanakarn SemiExpanded';
-    src: url(/assets/Pattanakarn-Regular-SemiExpanded.woff2);
+    src: url(./assets/Pattanakarn-Regular-SemiExpanded.woff2);
 }
 
 :root {
