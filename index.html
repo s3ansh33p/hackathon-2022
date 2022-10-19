@@ -23,6 +23,8 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="preload" href="/assets/Pattanakarn-Regular-SemiExpanded.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
     <!-- Custom -->
     <link rel="stylesheet" href="./styles.css?v=1">
     <script src="./scripts.js?v=1"></script>
@@ -35,25 +37,22 @@
     
     <!-- Begin page content -->
     <main class="flex-shrink-0">
-
         <div class="container mb-5">
             <!-- Header -->
-            <div class="d-flex align-items-center justify-content-md-start justify-content-center mt-5 main-title">
-                <h1 class="me-1 mb-0">ComSSA X CASSA</h1>
-                <div class="d-flex flex-column">
-                    <h6>2</h6>
-                    <h6>0</h6>
-                    <h6>2</h6>
-                    <h6>2</h6>
-                </div>
+            <div class="d-flex align-items-center justify-content-around mt-top main-title w-100">
+                <img src="/assets/CH22_Branding_Elements_1.svg" alt="ComSSA X CASSA Hackathon 2022">
+                <h1 class="int-text mx-4">Interstellar Odyssey</h1>
+                <img src="/assets/comssa.png" alt="ComSSA X CASSA Hackathon 2022">
             </div>
+
 
             <div class="row mt-5 flex-column-reverse flex-md-row">
 
                 <div class="col-12 col-md-6 my-5">
                     <!-- Description -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro numquam atque recusandae consectetur a, cum iste, facilis nihil, labore vero nesciunt. Nesciunt et est excepturi, amet deserunt quas pariatur atque!</p>
-
+                    <p>The ComSSA Hackathon is an annual event hosted by the Computer Science Students Association (ComSSA), the largest computing club at Curtin University, to provide students and young professionals of all disciplines an opportunity to learn, collaborate and solve problems. This year, ComSSA is co-collaborating with the Computer And Security Student Association (CASSA), an association for students studying Computer Science and Cyber Security at Edith Cowan University.</p>
+    <p>                        Proudly partnered with the School of Electrical Engineering, Computing and Mathematical Sciences (EECMS), the ComSSA Hackathon, titled Interstellar Odyssey, will be hosted in-person at Bentley campus with a prize pool of $4500.
+    </p>
                     <!-- Registration -->
                     <div class="row">
                         <div class="col-12 col-md-6 mb-2">
@@ -83,6 +82,7 @@
                 </div>
 
                 <!-- Countdown -->
+                <!-- commsaa logo on left? -->
                 <div class="col-12 col-md-6 my-5" style="min-height: 300px;">
                     <div class="d-flex align-items-center justify-content-center position-relative h-100 w-100" style="min-height: 300px;">
                         <div class="countdown-dots position-absolute"></div>
@@ -137,7 +137,7 @@
 
             <!-- Carousel -->
             <div class="mt-5">
-                <h2 class="section-title">Photos from ComSSA x IET Hackathon - 2021</h2>
+                <h2 class="section-title">Photos from previous hackathons</h2>
                 <div id="car-main" class="carousel slide carousel-fade" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#car-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -149,15 +149,13 @@
                         <div class="carousel-item active" data-bs-interval="5000">
                             <img src="./assets/prev1.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5 class="mb-3">Photos from ComSSA x IET Hackathon - 2021</h5>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
                             <img src="./assets/prev2.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5 class="mb-3">Photos from ComSSA x IET Hackathon - 2021</h5>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
@@ -186,79 +184,36 @@
                 </div>
             </div>
 
-            <!-- General Agenda -->
-            <div class="mt-5">
-                <h2 class="section-title">General Agenda</h2>
-                <span>The general agenda for the hackathon Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id qui, voluptatem nihil repudiandae distinctio nulla dolor quia sapiente iure, voluptates, minima ratione maiores numquam molestias accusantium beatae illo quaerat.</span>
-            </div>
-
-            <!-- Frequently Asked Questions -->
-            <div class="mt-5">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <div class="accordion accordion-flush" id="acc-main">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Question 1 will go here
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#acc-main">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur nesciunt similique possimus ducimus sapiente omnis laborum quaerat quidem. Aut, quibusdam voluptatum velit voluptates assumenda illo blanditiis vero! Doloremque, aliquam.</div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Question 2 will go here
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#acc-main">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur nesciunt similique possimus ducimus sapiente omnis laborum quaerat quidem. Aut, quibusdam voluptatum velit voluptates assumenda illo blanditiis vero! Doloremque, aliquam.</div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Question 3 will go here
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#acc-main">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur nesciunt similique possimus ducimus sapiente omnis laborum quaerat quidem. Aut, quibusdam voluptatum velit voluptates assumenda illo blanditiis vero! Doloremque, aliquam.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Sponsors -->
             <div class="mt-5 section-title">
-                <h2>Sponsors</h2>
                 <!-- Collection of images -->
-                <div class="row mt-5">
-                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
-                        <img src="./assets/atlassian.png" class="img-fluid" alt="...">
+                <div class="row mt-5 top-img">
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-start mb-5">
+                        <h4 class="mb-4">In collaboration with </h4>
+                        <img src="./assets/cassa.png" class="img-fluid" alt="...">
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
-                        <img src="./assets/bankwest.png" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-start mb-5">
+                        <h4 class="mb-4">Proudly partnered with </h4>
                         <img src="./assets/eecms.png" class="img-fluid" alt="...">
                     </div>
+                </div>
+                <div class="row mt-5 sponsors">
+                    <h4 class="w-100 text-center mb-4">Sponsors</h4>
+
                     <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
-                        <img src="./assets/imc.png" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
-                        <img src="./assets/powerledger.png" class="img-fluid" alt="...">
+                        <img src="./assets/powerledger.png" style="filter: brightness(10)" class="img-fluid" alt="...">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
                         <img src="./assets/vgw.png" class="img-fluid" alt="...">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
-                        <img src="./assets/cassa.png" class="img-fluid" alt="...">
+                        <img src="./assets/atlassian.png" class="img-fluid" alt="...">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
-                        <img src="./assets/comssa.jpg" class="img-fluid" alt="...">
+                        <img src="./assets/imc.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/bankwest.png" class="img-fluid" alt="...">
                     </div>
                 </div>
             </div>
