@@ -251,6 +251,15 @@ body {
 
 /* =================== MISC =================== */
 
+a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--primary-h)
+}
+
 /* Background image at top of the page */
 .bg-image {
     background: linear-gradient(transparent, var(--background)), url(./assets/bg.jpg);
