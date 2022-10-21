@@ -6,7 +6,7 @@
  * Version: 1.0
  */
 
-/* =================== Variables =================== */
+/* =================== Fonts =================== */
 
 @font-face {
     font-family: 'Pattanakarn';
@@ -17,6 +17,8 @@
     font-family: 'Pattanakarn Bold';
     src: url(./assets/Pattanakarn-Bold-SemiExpanded.woff2);
 }
+
+/* =================== Variables =================== */
 
 :root {
     /* --c1: #752cb4;
@@ -34,6 +36,7 @@
     --primary: #22c0ef;
     --primary-h: #86def9;
     --primary-c: #000; 
+    --highlight: #d80140;
     --bs-font-sans-serif: 'Pattanakarn', sans-serif;
 
 }
@@ -55,6 +58,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+::selection {
+    background-color: var(--highlight);
+}
+
 /* =================== Main Title =================== */
 
 .main-title h1 {
@@ -62,6 +69,7 @@ body {
     text-shadow: rgb(240 78 35 / 50%) 3px 3px 0px, rgb(240 78 35 / 30%) 6px 6px 0px;
     text-transform: uppercase;
     font-family: 'Pattanakarn Bold', sans-serif;
+    text-align: center;
 }
 
 .main-title img {
@@ -87,10 +95,16 @@ body {
     }
 }
 
+@media (min-width: 768px) {
+    .main-title h1 {
+        font-size: 2rem;
+    }
+}
+
 /* lg media query */
 @media (min-width: 992px) {
     .main-title h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -275,22 +289,13 @@ body {
 }
 
 .mt-top {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-/* sm media query */
-@media (min-width: 576px) {
-    .mt-top {
-        margin-top: 5rem;
-        margin-bottom: 9rem;
-    }
+    margin-top: 1rem;
 }
 
 /* md media query */
 @media (min-width: 768px) {
     .mt-top {
-        margin-bottom: 7rem;
+        margin-bottom: 6rem;
     }
 }
 
